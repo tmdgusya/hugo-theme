@@ -3,6 +3,8 @@ languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
 paginate = 5
+enableRobotsTXT = true
+googleAnalytics = ""
 
 [params]
   # dir name of your main content (default is `content/posts`).
@@ -53,6 +55,11 @@ paginate = 5
   # can be overridden in a page's front-matter
   # TocTitle = "Table of Contents" # default
 
+[sitemap]
+# always, hourly daily, weekly, monthly, yearly, never
+  changefreq = "always"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 [params.twitter]
   # set Twitter handles for Twitter cards
