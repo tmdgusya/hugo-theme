@@ -1,5 +1,5 @@
 +++
-title = "Integrate Hugo with Github pages" 
+title = "Make Personal Blog with Hugo and Github pages" 
 date = "2023-08-15" 
 author = "tmdgusya" 
 cover= "posts/hugo/logo.png"
