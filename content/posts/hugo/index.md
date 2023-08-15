@@ -7,8 +7,7 @@ cover= "posts/hugo/logo.png"
 
 # Integrate Hugo with Github pages
 
-**[Hugo](https://gohugo.io/)** is one of the most popular open-source static site generators. 
-You can install hugo on your local easily and deploy it as a static site on Github pages.
+**[Hugo](https://gohugo.io/)** is one of the most popular open-source static site generators. You can install `hugo` on your local easily and deploy it as a static site on Github pages.
 
 ## Install Hugo on your local
 
@@ -19,13 +18,13 @@ Before we jump right into the installation, I only write about the installation 
 brew install hugo
 ```
 
-If you finished install `hugo`, move on to the next step.
+If you have finished installing `hugo`, move on to the next step.
 
 ## Make a deploy repository on Github
 
 We need to make **two repositories** on Github. One is for the source code of the blog, and the other is for the static site. So, we need to use `submodule` to manage the two repositories.
 
-One's name should be **'username.github.io'** for indicating that it is a Github pages repository. The other's name can be anything you want. Make repository like below.
+One's name should be **'username.github.io'** to indicate that it is a Github pages repository. The other's name can be anything you want. Make a repository like the one below.
 
 ![Alt text](./image.png)
 
@@ -33,7 +32,7 @@ The repository above is used to deploy the static site. So, You don't need to wr
 
 ## Make a blog repository on Github
 
-This repository above is used to manage posts of the blog. So, you need to write post in this repository. I'll make a blog repository named **'hugo-theme'**. Anything is fine.
+This repository above is used to manage posts of the blog. So, you need to write a post in this repository. I'll make a blog repository named **'hugo-theme'**. Anything is fine.
 
 ![Alt text](image-1.png)
 
@@ -41,9 +40,9 @@ All right! We made two repositories. Let's move on to the next step.
 
 ## Make hugo blog directory
 
-In this step we are going to **make a hugo blog directory**. Follow the steps below.
+In this step, we are going to **make a hugo blog directory**. Follow the steps below.
 
-1. Move to directory where you want to make a blog directory.
+1. Move to the directory where you want to make a blog directory.
 2. Move to the directory you made and execute the following command.
     ```sh
     hugo new site <your blog name>
@@ -54,16 +53,16 @@ In this step we are going to **make a hugo blog directory**. Follow the steps be
     ```sh
     cd blog
     ```
-4. If you want to **apply theme**, execute the following command. In this tutorial, I'll use [hugo-theme-terminal](https://themes.gohugo.io/themes/hugo-theme-terminal/). If you want to use another theme, please refer to [this](https://themes.gohugo.io/). You can find easily how to apply theme on your hugo.
+4. If you want to **apply theme**, execute the following command. In this tutorial, I'll use [hugo-theme-terminal](https://themes.gohugo.io/themes/hugo-theme-terminal/). If you want to use another theme, please refer to [this](https://themes.gohugo.io/). You can easily find how to apply a theme on your hugo.
     ```sh
     git init
     git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal
     ```
-5. Copy configure file from web-site If you have to
+5. Copy the configuration file from the web-site If you have to
     - If you want to use [hugo-theme-terminal](https://themes.gohugo.io/themes/hugo-theme-terminal/), you can copy configure file from [here](https://themes.gohugo.io/themes/hugo-theme-terminal/#how-to-configure).
-6. Test it in local.
+6. Test it locally.
     ```sh
-    # hugo server -t {theme_name} (You must be follow the rule which is written in the theme's README.md)
+    # hugo server -t {theme_name} (You must follow the rule which is written in the theme's README.md)
     hugo server -t terminal
     ```
 7. Go to `http://localhost:1313` and check it.
@@ -72,9 +71,9 @@ In this step we are going to **make a hugo blog directory**. Follow the steps be
 
 ## Connect blog repository as a submodule
 
-Before we connect blog repository as a submodule, there is a one thing you have to know which is Build results of `hugo` are being packed in `public` directory. So, we need to connect blog repository as a submodule in `public` directory.
+Before we connect the blog repository as a submodule, there is one thing you have to know, which is Build results of `hugo` are being packed in `public` directory. So, we need to connect blog repository as a submodule in `public` directory.
 
-1. **Connect blog repository as a submodule.** (You have to replace the link below to your blog repository link)
+1. **Connect blog repository as a submodule.** (You have to replace the link below with your blog repository link)
     ```sh
     git submodule add -b main https://github.com/yours/yours.github.io.git public
     ```
