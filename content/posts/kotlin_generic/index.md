@@ -2,7 +2,7 @@
 title = "Generic" 
 date = "2023-08-22" 
 author = "tmdgusya" 
-cover= "posts/generice/kotlin/logo.png"
+cover= "posts/kotlin_generic/logo.png"
 +++
 # Generic
 
