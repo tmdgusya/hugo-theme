@@ -1,3 +1,9 @@
++++
+title = "Generic" 
+date = "2023-08-22" 
+author = "tmdgusya" 
+cover= "posts/generice/kotlin/logo.png"
++++
 # Generic
 
 What is Generic in Java or Kotlin? What is `Invariance`, `Convariance`, and `Contravariance`? I have been asking those things for a long day. So, we're gonna dive into **"Generic"** in Kotlin. There are a lot of concepts that we have to know. We're gonna break down those concepts.
