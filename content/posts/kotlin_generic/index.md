@@ -1,9 +1,10 @@
 +++
-title = "Generic" 
-date = "2023-08-22" 
+title = "Kotlin Generic" 
+date = "2023-08-15" 
 author = "tmdgusya" 
 cover= "posts/kotlin_generic/logo.png"
 +++
+
 # Generic
 
 What is Generic in Java or Kotlin? What is `Invariance`, `Convariance`, and `Contravariance`? I have been asking those things for a long day. So, we're gonna dive into **"Generic"** in Kotlin. There are a lot of concepts that we have to know. We're gonna break down those concepts.
@@ -230,13 +231,15 @@ fun main() {
 }
 ```
 
+As I mentioned before, You can see that the **immutable type `List` has an `out` qualifier**. But if you check the MutableList, you'll see that it doesn't have any. For all the reasons mentioned above, it's a good idea to use `in` and `out` as Joshua mentioned.
+
 ![Screenshot from 2023-08-22 01-48-08](https://github.com/go-swagno/examples/assets/57784077/7d9a93fb-1f9f-42e2-8801-f1ee928e1a62)
 
 As you can see, the modifier `out` is in the Type parameter in List, however, there is no `out` modifier in MutableList. This is because they are following the rule of Joshua Bloch.
 
 > "For maximum flexibility, use wildcard types on input parameters that represent producers or consumers", and proposes the following mnemonic: PECS stands for Producer-Extends, Consumer-Super.
 
-In Kotlin, `List` is **Producer** not even Consumer. So, `List` can take the `out` modifier as a Producer. That means If we create the Consumer class using Generic to use it generally, we can add the `out` modifier in Our class. I guess you could fully understand it.
+In Kotlin, `List` is **Producer** not even Consumer. So, `List` can take the `out` modifier as a Producer. That means If we create the Producer class using Generic to use it generally, we can add the `out` modifier in Our class. I guess you could fully understand it.
 
 To use `out` modifier is in Kotlin. The type declared `out` is used in **only the out-position** in the members of a class. That means you can not this type as a member function's parameter. you can only use it as a return type.
 

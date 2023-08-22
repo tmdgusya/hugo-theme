@@ -14,7 +14,7 @@ msg="rebuilding site $(date)"
 
 # 5. Push source and build repos.
 git commit -m "$msg"
-git push origin main
+git push -f origin main
 
 if [ $# -eq 1 ]
   then msg="$1"
