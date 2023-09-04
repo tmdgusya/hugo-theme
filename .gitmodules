@@ -5,7 +5,3 @@
 	path = public
 	url = https://github.com/tmdgusya/tmdgusya.github.io.git
 	branch = main
-[submodule "publi"]
-	path = publi
-	url = https://github.com/tmdgusya/tmdgusya.github.io.git
-	branch = main
