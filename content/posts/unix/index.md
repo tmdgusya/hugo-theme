@@ -9,7 +9,7 @@ Have you heard about **redirection in OS**? If not then this article is for you.
 
 ## Introduce Standard Input, Output, and Error
 
-<img width="302" alt="image" src="https://github.com/tmdgusya/Study-Java-File-Stream/assets/57784077/1653ab4c-a32b-4844-b130-11af3ca3a8fd">
+![](https://github.com/tmdgusya/Study-Java-File-Stream/assets/57784077/1653ab4c-a32b-4844-b130-11af3ca3a8fd)
 
 [The photo is from here](https://en.wikipedia.org/wiki/Redirection_(computing))
 
@@ -25,7 +25,7 @@ So, Today, we are going to learn about **redirection in OS**.  Let's get started
 
 What is my console's standard output of the `ls -a` command? That might be a console.
 
-<img width="290" alt="image" src="https://github.com/tmdgusya/zoomkoding-gatsby-blog/assets/57784077/6f74830f-aa96-4838-a0aa-60840af372f3">
+![](https://github.com/tmdgusya/zoomkoding-gatsby-blog/assets/57784077/6f74830f-aa96-4838-a0aa-60840af372f3)
 
 As you can see, the standard output of `ls -a` command is a console. But, what if I want to save the standard output of `ls -a` command to a file? Then, I can use **redirection**.
 
@@ -33,7 +33,7 @@ As you can see, the standard output of `ls -a` command is a console. But, what i
 ls -a > output.txt
 ```
 
-<img width="301" alt="image" src="https://github.com/tmdgusya/zoomkoding-gatsby-blog/assets/57784077/eb270d52-b20c-49a2-a3e1-ebbcfc6e1a82">
+![](https://github.com/tmdgusya/zoomkoding-gatsby-blog/assets/57784077/eb270d52-b20c-49a2-a3e1-ebbcfc6e1a82)
 
 As you can see, the standard output of `ls -a` command is saved to `output.txt` file. This is what **redirection** is.
 
@@ -53,7 +53,7 @@ And I want to print the text in the `input.txt` file to the console. Then, I can
 cat < input.txt
 ```
 
-<img width="253" alt="image" src="https://github.com/tmdgusya/Study-Java-File-Stream/assets/57784077/a7846e72-9ad7-4456-a6b1-d9b0acbdc219">
+![](https://github.com/tmdgusya/Study-Java-File-Stream/assets/57784077/a7846e72-9ad7-4456-a6b1-d9b0acbdc219)
 
 I think you already understand what **redirection** is. Let's move on to the next section. I guess you may want to learn about how it works under the hood. So, In the next post, I'm gonna show you about **file descriptor**.
 
