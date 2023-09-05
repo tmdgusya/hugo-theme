@@ -22,7 +22,7 @@ public static void main(String[] args) {
 }
 ```
 
-The reason is the assignment conversion is performed by compiler behind the scene. Effectively **casting the int literals to the narrower types**.
+The reason is the assignment conversion is performed by compiler behind the scenes. Effectively **casting the int literals to the narrower types**.
 
 If we fit the number that exceeds the range of byte into a variable of byte type, then we have to **risk data loss** and write **explicitly casting** in the code.
 
@@ -58,7 +58,7 @@ Now we know what the byte is and what Java's numeric systems are. So we are goin
     public abstract void write(int b) throws IOException;
 ```
 
-This method is one of the interface of OutputStream in Java. There's an important clarification. That is a "The byte to be written is the eight low-order bits of the argument given number. The 24 high-order bits of **given number are ignored**."
+This method is one of the interfaces of OutputStream in Java. There's an important clarification. That is a "The byte to be written is the eight low-order bits of the argument given number. The 24 high-order bits of **given number are ignored**."
 
 That means we might going to write the unexpected number to the OutputStream. Why does the write method of OutputStream have an argument as **int type, not a byte type** even though they have recognized this problem?
 
@@ -66,7 +66,7 @@ You should look at the code below to understand why the system was designed like
 
 ![](https://github.com/tmdgusya/kotlin-leetcode/assets/57784077/e3567f83-7580-470e-b72d-2712990b778e)
 
-I guess you might not know this. Also, their is **the another problem**. 
+I guess you might not know this. Also, there is **the another problem**. 
 
 ![](https://github.com/tmdgusya/kotlin-leetcode/assets/57784077/ff2afb72-d4f3-4b76-966a-b971439674a9)
 
